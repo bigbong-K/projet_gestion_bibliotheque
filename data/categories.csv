@@ -1,4 +1,4 @@
-id_categorie,name,link
+Id_categorie,Nom,Lien
 1,Travel,https://books.toscrape.com/catalogue/category/books/travel_2/index.html
 2,Mystery,https://books.toscrape.com/catalogue/category/books/mystery_3/index.html
 3,Historical Fiction,https://books.toscrape.com/catalogue/category/books/historical-fiction_4/index.html
