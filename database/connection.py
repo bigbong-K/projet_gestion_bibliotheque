@@ -22,3 +22,16 @@ conn = psycopg2.connect(
 )
 
 cursor = conn.cursor()
+
+def insert_dataframe(df:pd.DataFrame, nom_table:str):
+    # On recupère chaque valeur du df
+    for row in df.values:
+        columns = ", ".join(df.columns) # "col1, col2, col3"
+        # Répresentant des valeurs du df
+        values_p = ", ".join(["%s"]*len(df.columns)) #"%s, %s, %s"
+        # On enregistre la valeur
+        query = f"INSERT INTO {(nom_table)} ({columns}) VALUES ({values_p})"
+        # On execute la syntaxte
+        cursor.execute(query, tuple(row))
+    conn.commit()
+    print(f"Données insérée dans la table {nom_table}")
