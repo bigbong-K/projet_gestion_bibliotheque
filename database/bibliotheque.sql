@@ -20,7 +20,7 @@ CREATE TABLE IF NOT EXISTS livre(
     disponibilite INT,
     note INT,
     code_upc VARCHAR(50),
-    description VARCHAR(300),
+    description TEXT,
     image_url VARCHAR(100),
     lien VARCHAR(100),
 
