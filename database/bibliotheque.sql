@@ -15,6 +15,7 @@ CREATE TABLE IF NOT EXISTS categorie(
 CREATE TABLE IF NOT EXISTS livre(
     id_livre SERIAL PRIMARY KEY,
     id_categorie INT NOT NULL,
+    nom VARCHAR(50) NOT NULL,
     prix NUMERIC(6,2),
     disponibilite INT,
     note INT,
