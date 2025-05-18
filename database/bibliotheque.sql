@@ -15,14 +15,14 @@ CREATE TABLE IF NOT EXISTS categorie(
 CREATE TABLE IF NOT EXISTS livre(
     id_livre SERIAL PRIMARY KEY,
     id_categorie INT NOT NULL,
-    nom VARCHAR(50) NOT NULL,
+    nom VARCHAR(300) NOT NULL,
     prix NUMERIC(6,2),
     disponibilite INT,
     note INT,
     code_upc VARCHAR(50),
     description TEXT,
-    image_url VARCHAR(100),
-    lien VARCHAR(100),
+    image_url TEXT,
+    lien TEXT,
 
     FOREIGN KEY (id_categorie)
     REFERENCES categorie (id_categorie)
