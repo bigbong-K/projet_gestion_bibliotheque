@@ -2,7 +2,7 @@ import categorie.crud
 from sqlalchemy import Column, Integer, String, Float, ForeignKey
 from database import Base
 from sqlalchemy.orm import relationship
-import categorie.models
+# import categorie.models
 
 
 class Livre_tab(Base):
