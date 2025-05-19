@@ -30,9 +30,11 @@ def read_livres(skip:int=0, limit:int=5, db: Session = Depends(get_db)) -> Livre
 @livre_router.post("/livre", tags=["Livre"])
 def create_livre(livre_input: Livre, db: Session = Depends(get_db)) -> LivreId:
     # id = db.query(func.max(Livre_tab.id_livre)).scalar() + 1
-    livre = Livre_tab(id_categorie=livre_input.id_categorie, nom=livre_input.nom, prix=livre_input.prix,
-                      disponibilite=livre_input.disponibilite, note=livre_input.note, code_upc=livre_input.code_upc,
-                      description=livre_input.description, image_url=livre_input.image_url, lien=livre_input.lien)
+    # livre = Livre_tab(id_categorie=livre_input.id_categorie, nom=livre_input.nom, prix=livre_input.prix,
+    #                   disponibilite=livre_input.disponibilite, note=livre_input.note, code_upc=livre_input.code_upc,
+    #                   description=livre_input.description, image_url=livre_input.image_url, lien=livre_input.lien)
+    
+    livre = Livre_tab(**livre_input.model_dump())
     
     db.add(livre)
     db.commit()
