@@ -1,0 +1,28 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "get_index",
+        "kind": 2,
+        "importPath": "crud",
+        "description": "crud",
+        "peekOfCode": "def get_index():\n    return {\"data\":\"hello world\"}\n# python3 -m uvicorn main:api --reload",
+        "detail": "crud",
+        "documentation": {}
+    },
+    {
+        "label": "api",
+        "kind": 5,
+        "importPath": "crud",
+        "description": "crud",
+        "peekOfCode": "api = FastAPI(title=\"My API Bibliothèque\")\n@api.get(\"/\")\ndef get_index():\n    return {\"data\":\"hello world\"}\n# python3 -m uvicorn main:api --reload",
+        "detail": "crud",
+        "documentation": {}
+    }
+]

@@ -1,0 +1,410 @@
+[
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "sessionmaker",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "declarative_base",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Categorie",
+        "importPath": "categorie.schemas",
+        "description": "categorie.schemas",
+        "isExtraImport": true,
+        "detail": "categorie.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "CategorieId",
+        "importPath": "categorie.schemas",
+        "description": "categorie.schemas",
+        "isExtraImport": true,
+        "detail": "categorie.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Categorie_tab",
+        "importPath": "categorie.models",
+        "description": "categorie.models",
+        "isExtraImport": true,
+        "detail": "categorie.models",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "create_engine",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "load_dotenv",
+        "importPath": "dotenv",
+        "description": "dotenv",
+        "isExtraImport": true,
+        "detail": "dotenv",
+        "documentation": {}
+    },
+    {
+        "label": "os",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "os",
+        "description": "os",
+        "detail": "os",
+        "documentation": {}
+    },
+    {
+        "label": "categorie.crud",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "categorie.crud",
+        "description": "categorie.crud",
+        "detail": "categorie.crud",
+        "documentation": {}
+    },
+    {
+        "label": "get_categorie_by_id",
+        "kind": 2,
+        "importPath": "categorie.crud",
+        "description": "categorie.crud",
+        "peekOfCode": "def get_categorie_by_id(id: int, db: Session = Depends(get_db)) -> CategorieId:\n    return db.query(Categorie_tab).filter(\n        Categorie_tab.id_categorie == id\n    ).first()\n@categrie_router.get(\"/categorie/{id}\", tags=[\"Categorie\"])\ndef read_categorie(id:int, db: Session = Depends(get_db)) -> CategorieId:\n    categ = get_categorie_by_id(id, db)\n    if categ is None:\n        raise HTTPException(404, \"Categorie not found\")\n    return categ",
+        "detail": "categorie.crud",
+        "documentation": {}
+    },
+    {
+        "label": "read_categorie",
+        "kind": 2,
+        "importPath": "categorie.crud",
+        "description": "categorie.crud",
+        "peekOfCode": "def read_categorie(id:int, db: Session = Depends(get_db)) -> CategorieId:\n    categ = get_categorie_by_id(id, db)\n    if categ is None:\n        raise HTTPException(404, \"Categorie not found\")\n    return categ\n@categrie_router.get(\"/categories\", tags=[\"Categorie\"])\ndef read_categories(skip:int=0, limit:int=5, db: Session = Depends(get_db)) -> list[CategorieId]:\n    return db.query(Categorie_tab).offset(skip).limit(limit).all()\n# ========================REQUETTE_POST===============================\n@categrie_router.post(\"/categorie\", tags=[\"Categorie\"])",
+        "detail": "categorie.crud",
+        "documentation": {}
+    },
+    {
+        "label": "read_categories",
+        "kind": 2,
+        "importPath": "categorie.crud",
+        "description": "categorie.crud",
+        "peekOfCode": "def read_categories(skip:int=0, limit:int=5, db: Session = Depends(get_db)) -> list[CategorieId]:\n    return db.query(Categorie_tab).offset(skip).limit(limit).all()\n# ========================REQUETTE_POST===============================\n@categrie_router.post(\"/categorie\", tags=[\"Categorie\"])\ndef create_categorie(cat_input: Categorie, db: Session = Depends(get_db)) -> CategorieId:\n    # new_id = db.query(func.max(Categorie_tab.id_categorie)).scalar() + 1\n    categ = Categorie_tab(nom=cat_input.nom, lien=cat_input.lien)\n    db.add(categ)\n    db.commit()\n    db.refresh(categ)",
+        "detail": "categorie.crud",
+        "documentation": {}
+    },
+    {
+        "label": "create_categorie",
+        "kind": 2,
+        "importPath": "categorie.crud",
+        "description": "categorie.crud",
+        "peekOfCode": "def create_categorie(cat_input: Categorie, db: Session = Depends(get_db)) -> CategorieId:\n    # new_id = db.query(func.max(Categorie_tab.id_categorie)).scalar() + 1\n    categ = Categorie_tab(nom=cat_input.nom, lien=cat_input.lien)\n    db.add(categ)\n    db.commit()\n    db.refresh(categ)\n    return categ\n# ========================REQUETTE_PUT===============================\n@categrie_router.put(\"/categorie/{id}\", tags=[\"Categorie\"])\ndef update_categorie(id:int, new_categ:Categorie, db: Session = Depends(get_db)) -> CategorieId:",
+        "detail": "categorie.crud",
+        "documentation": {}
+    },
+    {
+        "label": "update_categorie",
+        "kind": 2,
+        "importPath": "categorie.crud",
+        "description": "categorie.crud",
+        "peekOfCode": "def update_categorie(id:int, new_categ:Categorie, db: Session = Depends(get_db)) -> CategorieId:\n    categ = get_categorie_by_id(id, db)\n    if categ is None:\n        raise HTTPException(404, \"categorie not found\")\n    categ.nom = new_categ.nom\n    categ.lien = new_categ.lien\n    db.commit()\n    return categ\n# ========================REQUETTE_DELETE===============================\n@categrie_router.delete(\"/categorie/{id}\", tags=[\"Categorie\"])",
+        "detail": "categorie.crud",
+        "documentation": {}
+    },
+    {
+        "label": "delete_categorie",
+        "kind": 2,
+        "importPath": "categorie.crud",
+        "description": "categorie.crud",
+        "peekOfCode": "def delete_categorie(id:int, db: Session = Depends(get_db)) -> CategorieId:\n    # categ = db.query(Categorie_tab).filter(Categorie_tab.id_categorie == id).first()\n    categ = get_categorie_by_id(id, db)\n    if categ is None:\n        raise HTTPException(404, \"Categorie not found\")\n    db.delete(categ)\n    db.commit()\n    return categ",
+        "detail": "categorie.crud",
+        "documentation": {}
+    },
+    {
+        "label": "categrie_router",
+        "kind": 5,
+        "importPath": "categorie.crud",
+        "description": "categorie.crud",
+        "peekOfCode": "categrie_router = APIRouter()\n# api = FastAPI()\n# @categrie_router.get(\"/\")\n# def get_index():\n#     return {\"message\" : \"Bienvenue sur mon application de gestion de bibliothèque\"}\n# ========================REQUETTE_GET===============================\ndef get_categorie_by_id(id: int, db: Session = Depends(get_db)) -> CategorieId:\n    return db.query(Categorie_tab).filter(\n        Categorie_tab.id_categorie == id\n    ).first()",
+        "detail": "categorie.crud",
+        "documentation": {}
+    },
+    {
+        "label": "Categorie_tab",
+        "kind": 6,
+        "importPath": "categorie.models",
+        "description": "categorie.models",
+        "peekOfCode": "class Categorie_tab(Base):\n    __tablename__ = \"categorie\"\n    id_categorie = Column(Integer, primary_key=True, index=True)\n    nom = Column(String, nullable=False)\n    lien = Column(String)",
+        "detail": "categorie.models",
+        "documentation": {}
+    },
+    {
+        "label": "CategorieId",
+        "kind": 6,
+        "importPath": "categorie.schemas",
+        "description": "categorie.schemas",
+        "peekOfCode": "class CategorieId(BaseModel):\n    id_categorie: int\n    nom: str\n    lien: str\n    class Config:\n        orm_mode = True\nclass Categorie(BaseModel):\n    nom: str\n    lien: str",
+        "detail": "categorie.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Categorie",
+        "kind": 6,
+        "importPath": "categorie.schemas",
+        "description": "categorie.schemas",
+        "peekOfCode": "class Categorie(BaseModel):\n    nom: str\n    lien: str",
+        "detail": "categorie.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "kind": 2,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "def get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "load",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "load = load_dotenv(dotenv_path=\"../database/.env\")\nDATABASE = os.getenv(\"DATABASE\")\nUSER = os.getenv(\"USER\")\nPASSWORD = os.getenv(\"PASSWORD\")\nHOST = os.getenv(\"HOST\")\nPORT = os.getenv(\"PORT\")\nDATABASE_URL = f\"postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}\"\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "DATABASE = os.getenv(\"DATABASE\")\nUSER = os.getenv(\"USER\")\nPASSWORD = os.getenv(\"PASSWORD\")\nHOST = os.getenv(\"HOST\")\nPORT = os.getenv(\"PORT\")\nDATABASE_URL = f\"postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}\"\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "USER",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "USER = os.getenv(\"USER\")\nPASSWORD = os.getenv(\"PASSWORD\")\nHOST = os.getenv(\"HOST\")\nPORT = os.getenv(\"PORT\")\nDATABASE_URL = f\"postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}\"\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "PASSWORD",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "PASSWORD = os.getenv(\"PASSWORD\")\nHOST = os.getenv(\"HOST\")\nPORT = os.getenv(\"PORT\")\nDATABASE_URL = f\"postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}\"\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "HOST",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "HOST = os.getenv(\"HOST\")\nPORT = os.getenv(\"PORT\")\nDATABASE_URL = f\"postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}\"\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "PORT",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "PORT = os.getenv(\"PORT\")\nDATABASE_URL = f\"postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}\"\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "DATABASE_URL",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "DATABASE_URL = f\"postgresql://{USER}:{PASSWORD}@{HOST}:{PORT}/{DATABASE}\"\nengine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "engine = create_engine(DATABASE_URL)\nSessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "SessionLocal",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "SessionLocal = sessionmaker(autocommit=False, autoflush=False, bind=engine)\nBase = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "kind": 5,
+        "importPath": "database",
+        "description": "database",
+        "peekOfCode": "Base = declarative_base()\ndef get_db():\n    db = SessionLocal()\n    try:\n        yield db\n    finally:\n        db.close()",
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "app",
+        "kind": 5,
+        "importPath": "main",
+        "description": "main",
+        "peekOfCode": "app = FastAPI(title=\"API : Gestion de Bibliothèque\")\napp.include_router(categorie.crud.categrie_router)",
+        "detail": "main",
+        "documentation": {}
+    }
+]
