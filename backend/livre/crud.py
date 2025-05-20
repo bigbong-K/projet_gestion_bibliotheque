@@ -79,7 +79,7 @@ def delete_livre(id:int, db: Session = Depends(get_db)) -> LivreId:
     return livre
     
 
-@livre_router.get("/categorie/livre/{categorie_input}", tags=["Categorie_Livre"])
+@livre_router.get("/categories/livre/{categorie_input}", tags=["Categorie_Livre"])
 def read_livre_by_categorie(categorie_input:str="Mystery", db: Session = Depends(get_db)) -> list[Livre_categorie]:
     livre = db.query(Livre_tab).join(Livre_tab.categorie).filter(Categorie_tab.nom.ilike(f"%{categorie_input}%")).limit(5).all()
     if not livre:
@@ -89,7 +89,7 @@ def read_livre_by_categorie(categorie_input:str="Mystery", db: Session = Depends
 
 @livre_router.get("/categorie/livre/{nom_input}", tags=["Categorie_Livre"])
 def read_livre_by_name(nom_input:str="Le monde magique de Lili", db: Session = Depends(get_db)) -> Livre_categorie:
-    livre = db.query(Livre_tab).join(Livre_tab.categorie).filter(Livre_tab.nom.ilike(f"%{nom_input}%")).all()
+    livre = db.query(Livre_tab).join(Livre_tab.categorie).filter(Livre_tab.nom.ilike(f"%{nom_input}%")).first()
     if not livre:
         raise HTTPException(404, f"{nom_input} is not among books")
     return livre

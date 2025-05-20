@@ -1,5 +1,4 @@
 database/.env
 backend/.vscode/*
 backend/__pycache__/*
-backend/categorie/.vscode/*
-backend/categorie/__pycache__/*
+
