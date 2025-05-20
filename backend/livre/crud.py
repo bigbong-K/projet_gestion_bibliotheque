@@ -3,8 +3,9 @@ from sqlalchemy.orm import Session
 from database import engine, get_db
 from sqlalchemy import func, text
 from livre.models import Livre_tab
-from livre.schemas import LivreId, Livre
+from livre.schemas import Livre_categorie, Livre, LivreId
 from categorie.crud import delete_categorie, update_categorie
+from categorie.models import Categorie_tab
 
 livre_router = APIRouter()
 
@@ -77,3 +78,18 @@ def delete_livre(id:int, db: Session = Depends(get_db)) -> LivreId:
     
     return livre
     
+
+@livre_router.get("/categorie/livre/{categorie_input}", tags=["Categorie_Livre"])
+def read_livre_by_categorie(categorie_input:str="Mystery", db: Session = Depends(get_db)) -> list[Livre_categorie]:
+    livre = db.query(Livre_tab).join(Livre_tab.categorie).filter(Categorie_tab.nom.ilike(f"%{categorie_input}%")).limit(5).all()
+    if not livre:
+        raise HTTPException(404, f"{categorie_input} not among categories")
+    return livre
+
+
+@livre_router.get("/categorie/livre/{nom_input}", tags=["Categorie_Livre"])
+def read_livre_by_name(nom_input:str="Le monde magique de Lili", db: Session = Depends(get_db)) -> Livre_categorie:
+    livre = db.query(Livre_tab).join(Livre_tab.categorie).filter(Livre_tab.nom.ilike(f"%{nom_input}%")).all()
+    if not livre:
+        raise HTTPException(404, f"{nom_input} is not among books")
+    return livre

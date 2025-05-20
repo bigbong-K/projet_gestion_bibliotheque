@@ -1,13 +1,14 @@
 from pydantic import BaseModel
 
-class CategorieId(BaseModel):
-    id_categorie: int
+
+class Categorie(BaseModel):
     nom: str
     lien: str
+
+
+class CategorieId(Categorie):
+    id_categorie: int
     
     class Config:
         orm_mode = True
     
-class Categorie(BaseModel):
-    nom: str
-    lien: str

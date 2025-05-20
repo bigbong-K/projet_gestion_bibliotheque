@@ -40,7 +40,63 @@
         "documentation": {}
     },
     {
+        "label": "APIRouter",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "Depends",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "HTTPException",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
+        "label": "FastAPI",
+        "importPath": "fastapi",
+        "description": "fastapi",
+        "isExtraImport": true,
+        "detail": "fastapi",
+        "documentation": {}
+    },
+    {
         "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "Session",
+        "importPath": "sqlalchemy.orm",
+        "description": "sqlalchemy.orm",
+        "isExtraImport": true,
+        "detail": "sqlalchemy.orm",
+        "documentation": {}
+    },
+    {
+        "label": "relationship",
         "importPath": "sqlalchemy.orm",
         "description": "sqlalchemy.orm",
         "isExtraImport": true,
@@ -77,6 +133,38 @@
         "description": "categorie.schemas",
         "isExtraImport": true,
         "detail": "categorie.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Categorie",
+        "importPath": "categorie.schemas",
+        "description": "categorie.schemas",
+        "isExtraImport": true,
+        "detail": "categorie.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "engine",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "get_db",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
+        "documentation": {}
+    },
+    {
+        "label": "Base",
+        "importPath": "database",
+        "description": "database",
+        "isExtraImport": true,
+        "detail": "database",
         "documentation": {}
     },
     {
@@ -128,6 +216,14 @@
         "documentation": {}
     },
     {
+        "label": "Categorie_tab",
+        "importPath": "categorie.models",
+        "description": "categorie.models",
+        "isExtraImport": true,
+        "detail": "categorie.models",
+        "documentation": {}
+    },
+    {
         "label": "func",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -168,6 +264,78 @@
         "documentation": {}
     },
     {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "func",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "text",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Column",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Integer",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "String",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "Float",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
+        "label": "ForeignKey",
+        "importPath": "sqlalchemy",
+        "description": "sqlalchemy",
+        "isExtraImport": true,
+        "detail": "sqlalchemy",
+        "documentation": {}
+    },
+    {
         "label": "create_engine",
         "importPath": "sqlalchemy",
         "description": "sqlalchemy",
@@ -181,6 +349,71 @@
         "description": "pydantic",
         "isExtraImport": true,
         "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "BaseModel",
+        "importPath": "pydantic",
+        "description": "pydantic",
+        "isExtraImport": true,
+        "detail": "pydantic",
+        "documentation": {}
+    },
+    {
+        "label": "Livre_tab",
+        "importPath": "livre.models",
+        "description": "livre.models",
+        "isExtraImport": true,
+        "detail": "livre.models",
+        "documentation": {}
+    },
+    {
+        "label": "Livre_categorie",
+        "importPath": "livre.schemas",
+        "description": "livre.schemas",
+        "isExtraImport": true,
+        "detail": "livre.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Livre",
+        "importPath": "livre.schemas",
+        "description": "livre.schemas",
+        "isExtraImport": true,
+        "detail": "livre.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "LivreId",
+        "importPath": "livre.schemas",
+        "description": "livre.schemas",
+        "isExtraImport": true,
+        "detail": "livre.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "categorie.crud",
+        "kind": 6,
+        "isExtraImport": true,
+        "importPath": "categorie.crud",
+        "description": "categorie.crud",
+        "detail": "categorie.crud",
+        "documentation": {}
+    },
+    {
+        "label": "delete_categorie",
+        "importPath": "categorie.crud",
+        "description": "categorie.crud",
+        "isExtraImport": true,
+        "detail": "categorie.crud",
+        "documentation": {}
+    },
+    {
+        "label": "update_categorie",
+        "importPath": "categorie.crud",
+        "description": "categorie.crud",
+        "isExtraImport": true,
+        "detail": "categorie.crud",
         "documentation": {}
     },
     {
@@ -201,12 +434,12 @@
         "documentation": {}
     },
     {
-        "label": "categorie.crud",
+        "label": "livre.crud",
         "kind": 6,
         "isExtraImport": true,
-        "importPath": "categorie.crud",
-        "description": "categorie.crud",
-        "detail": "categorie.crud",
+        "importPath": "livre.crud",
+        "description": "livre.crud",
+        "detail": "livre.crud",
         "documentation": {}
     },
     {
@@ -277,17 +510,8 @@
         "kind": 6,
         "importPath": "categorie.models",
         "description": "categorie.models",
-        "peekOfCode": "class Categorie_tab(Base):\n    __tablename__ = \"categorie\"\n    id_categorie = Column(Integer, primary_key=True, index=True)\n    nom = Column(String, nullable=False)\n    lien = Column(String)",
+        "peekOfCode": "class Categorie_tab(Base):\n    __tablename__ = \"categorie\"\n    id_categorie = Column(Integer, primary_key=True, index=True)\n    nom = Column(String, nullable=False)\n    lien = Column(String)\n    livre = relationship(\"Livre_tab\", back_populates=\"categorie\")",
         "detail": "categorie.models",
-        "documentation": {}
-    },
-    {
-        "label": "CategorieId",
-        "kind": 6,
-        "importPath": "categorie.schemas",
-        "description": "categorie.schemas",
-        "peekOfCode": "class CategorieId(BaseModel):\n    id_categorie: int\n    nom: str\n    lien: str\n    class Config:\n        orm_mode = True\nclass Categorie(BaseModel):\n    nom: str\n    lien: str",
-        "detail": "categorie.schemas",
         "documentation": {}
     },
     {
@@ -295,8 +519,134 @@
         "kind": 6,
         "importPath": "categorie.schemas",
         "description": "categorie.schemas",
-        "peekOfCode": "class Categorie(BaseModel):\n    nom: str\n    lien: str",
+        "peekOfCode": "class Categorie(BaseModel):\n    nom: str\n    lien: str\nclass CategorieId(Categorie):\n    id_categorie: int\n    class Config:\n        orm_mode = True",
         "detail": "categorie.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "CategorieId",
+        "kind": 6,
+        "importPath": "categorie.schemas",
+        "description": "categorie.schemas",
+        "peekOfCode": "class CategorieId(Categorie):\n    id_categorie: int\n    class Config:\n        orm_mode = True",
+        "detail": "categorie.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "get_livre_by_id",
+        "kind": 2,
+        "importPath": "livre.crud",
+        "description": "livre.crud",
+        "peekOfCode": "def get_livre_by_id(id:int, db: Session = Depends(get_db)):\n    return db.query(Livre_tab).filter(Livre_tab.id_livre == id).first()\n@livre_router.get(\"/livre/{id}\", tags=[\"Livre\"])\ndef read_livre(id: int, db: Session = Depends(get_db)) -> LivreId:\n    livre = get_livre_by_id(id, db)\n    if livre is None:\n        raise HTTPException(404, \"Livre not found\")\n    return livre\n@livre_router.get(\"/livres\", tags=[\"Livre\"])\ndef read_livres(skip:int=0, limit:int=5, db: Session = Depends(get_db)) -> LivreId:",
+        "detail": "livre.crud",
+        "documentation": {}
+    },
+    {
+        "label": "read_livre",
+        "kind": 2,
+        "importPath": "livre.crud",
+        "description": "livre.crud",
+        "peekOfCode": "def read_livre(id: int, db: Session = Depends(get_db)) -> LivreId:\n    livre = get_livre_by_id(id, db)\n    if livre is None:\n        raise HTTPException(404, \"Livre not found\")\n    return livre\n@livre_router.get(\"/livres\", tags=[\"Livre\"])\ndef read_livres(skip:int=0, limit:int=5, db: Session = Depends(get_db)) -> LivreId:\n    return db.query(Livre_tab).offset(skip).limit(limit).all()\n# ===============LIVRE_POST===================================================\n@livre_router.post(\"/livre\", tags=[\"Livre\"])",
+        "detail": "livre.crud",
+        "documentation": {}
+    },
+    {
+        "label": "read_livres",
+        "kind": 2,
+        "importPath": "livre.crud",
+        "description": "livre.crud",
+        "peekOfCode": "def read_livres(skip:int=0, limit:int=5, db: Session = Depends(get_db)) -> LivreId:\n    return db.query(Livre_tab).offset(skip).limit(limit).all()\n# ===============LIVRE_POST===================================================\n@livre_router.post(\"/livre\", tags=[\"Livre\"])\ndef create_livre(livre_input: Livre, db: Session = Depends(get_db)) -> LivreId:\n    # id = db.query(func.max(Livre_tab.id_livre)).scalar() + 1\n    # livre = Livre_tab(id_categorie=livre_input.id_categorie, nom=livre_input.nom, prix=livre_input.prix,\n    #                   disponibilite=livre_input.disponibilite, note=livre_input.note, code_upc=livre_input.code_upc,\n    #                   description=livre_input.description, image_url=livre_input.image_url, lien=livre_input.lien)\n    livre = Livre_tab(**livre_input.model_dump())",
+        "detail": "livre.crud",
+        "documentation": {}
+    },
+    {
+        "label": "create_livre",
+        "kind": 2,
+        "importPath": "livre.crud",
+        "description": "livre.crud",
+        "peekOfCode": "def create_livre(livre_input: Livre, db: Session = Depends(get_db)) -> LivreId:\n    # id = db.query(func.max(Livre_tab.id_livre)).scalar() + 1\n    # livre = Livre_tab(id_categorie=livre_input.id_categorie, nom=livre_input.nom, prix=livre_input.prix,\n    #                   disponibilite=livre_input.disponibilite, note=livre_input.note, code_upc=livre_input.code_upc,\n    #                   description=livre_input.description, image_url=livre_input.image_url, lien=livre_input.lien)\n    livre = Livre_tab(**livre_input.model_dump())\n    db.add(livre)\n    db.commit()\n    db.refresh(livre)\n    return livre",
+        "detail": "livre.crud",
+        "documentation": {}
+    },
+    {
+        "label": "update_livre",
+        "kind": 2,
+        "importPath": "livre.crud",
+        "description": "livre.crud",
+        "peekOfCode": "def update_livre(id:int, livre_update:Livre, db: Session = Depends(get_db)) -> LivreId:\n    livre = get_livre_by_id(id, db)\n    if livre is None:\n        raise HTTPException(404, \"Livre not found\")\n    livre.id_categorie=livre_update.id_categorie\n    livre.nom=livre_update.nom\n    livre.prix=livre_update.prix\n    livre.disponibilite=livre_update.disponibilite\n    livre.note=livre_update.note\n    livre.code_upc=livre_update.code_upc",
+        "detail": "livre.crud",
+        "documentation": {}
+    },
+    {
+        "label": "delete_livre",
+        "kind": 2,
+        "importPath": "livre.crud",
+        "description": "livre.crud",
+        "peekOfCode": "def delete_livre(id:int, db: Session = Depends(get_db)) -> LivreId:\n    livre = get_livre_by_id(id, db)\n    if livre is None:\n        raise HTTPException(404, \"Livre not found\")\n    db.delete(livre)\n    db.commit()\n    return livre\n@livre_router.get(\"/categorie/livre/{categorie_input}\", tags=[\"Categorie_Livre\"])\ndef read_livre_by_categorie(categorie_input:str=\"Mystery\", db: Session = Depends(get_db)) -> list[Livre_categorie]:\n    livre = db.query(Livre_tab).join(Livre_tab.categorie).filter(Categorie_tab.nom.ilike(f\"%{categorie_input}%\")).limit(5).all()",
+        "detail": "livre.crud",
+        "documentation": {}
+    },
+    {
+        "label": "read_livre_by_categorie",
+        "kind": 2,
+        "importPath": "livre.crud",
+        "description": "livre.crud",
+        "peekOfCode": "def read_livre_by_categorie(categorie_input:str=\"Mystery\", db: Session = Depends(get_db)) -> list[Livre_categorie]:\n    livre = db.query(Livre_tab).join(Livre_tab.categorie).filter(Categorie_tab.nom.ilike(f\"%{categorie_input}%\")).limit(5).all()\n    if not livre:\n        raise HTTPException(404, f\"{categorie_input} not among categories\")\n    return livre\n@livre_router.get(\"/categorie/livre/{nom_input}\", tags=[\"Categorie_Livre\"])\ndef read_livre_by_name(nom_input:str=\"Le monde magique de Lili\", db: Session = Depends(get_db)) -> Livre_categorie:\n    livre = db.query(Livre_tab).join(Livre_tab.categorie).filter(Livre_tab.nom.ilike(f\"%{nom_input}%\")).all()\n    if not livre:\n        raise HTTPException(404, f\"{nom_input} is not among books\")",
+        "detail": "livre.crud",
+        "documentation": {}
+    },
+    {
+        "label": "read_livre_by_name",
+        "kind": 2,
+        "importPath": "livre.crud",
+        "description": "livre.crud",
+        "peekOfCode": "def read_livre_by_name(nom_input:str=\"Le monde magique de Lili\", db: Session = Depends(get_db)) -> Livre_categorie:\n    livre = db.query(Livre_tab).join(Livre_tab.categorie).filter(Livre_tab.nom.ilike(f\"%{nom_input}%\")).all()\n    if not livre:\n        raise HTTPException(404, f\"{nom_input} is not among books\")\n    return livre",
+        "detail": "livre.crud",
+        "documentation": {}
+    },
+    {
+        "label": "livre_router",
+        "kind": 5,
+        "importPath": "livre.crud",
+        "description": "livre.crud",
+        "peekOfCode": "livre_router = APIRouter()\n# ===============LIVRE_GET===================================================\ndef get_livre_by_id(id:int, db: Session = Depends(get_db)):\n    return db.query(Livre_tab).filter(Livre_tab.id_livre == id).first()\n@livre_router.get(\"/livre/{id}\", tags=[\"Livre\"])\ndef read_livre(id: int, db: Session = Depends(get_db)) -> LivreId:\n    livre = get_livre_by_id(id, db)\n    if livre is None:\n        raise HTTPException(404, \"Livre not found\")\n    return livre",
+        "detail": "livre.crud",
+        "documentation": {}
+    },
+    {
+        "label": "Livre_tab",
+        "kind": 6,
+        "importPath": "livre.models",
+        "description": "livre.models",
+        "peekOfCode": "class Livre_tab(Base):\n    __tablename__ = \"livre\"\n    id_livre = Column(Integer, primary_key=True, index=True)\n    id_categorie = Column(Integer, ForeignKey(\"categorie.id_categorie\"))\n    nom = Column(String, nullable=False)\n    prix = Column(Float)\n    disponibilite = Column(Integer)\n    note = Column(Integer)\n    code_upc = Column(String)\n    description = Column(String)",
+        "detail": "livre.models",
+        "documentation": {}
+    },
+    {
+        "label": "Livre",
+        "kind": 6,
+        "importPath": "livre.schemas",
+        "description": "livre.schemas",
+        "peekOfCode": "class Livre(BaseModel):\n    id_categorie: int\n    nom: str\n    prix: float\n    disponibilite: int\n    note: int\n    code_upc: str\n    description: str\n    image_url: str\n    lien: str",
+        "detail": "livre.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "LivreId",
+        "kind": 6,
+        "importPath": "livre.schemas",
+        "description": "livre.schemas",
+        "peekOfCode": "class LivreId(Livre):\n    id_livre: int\n    class Config:\n        orm_mode = True\nclass Livre_categorie(BaseModel):\n    nom: str\n    prix: float\n    note: int\n    disponibilite: int\n    categorie: Categorie",
+        "detail": "livre.schemas",
+        "documentation": {}
+    },
+    {
+        "label": "Livre_categorie",
+        "kind": 6,
+        "importPath": "livre.schemas",
+        "description": "livre.schemas",
+        "peekOfCode": "class Livre_categorie(BaseModel):\n    nom: str\n    prix: float\n    note: int\n    disponibilite: int\n    categorie: Categorie\n    class Config:\n        orm_mode = True",
+        "detail": "livre.schemas",
         "documentation": {}
     },
     {
@@ -403,7 +753,7 @@
         "kind": 5,
         "importPath": "main",
         "description": "main",
-        "peekOfCode": "app = FastAPI(title=\"API : Gestion de Bibliothèque\")\napp.include_router(categorie.crud.categrie_router)",
+        "peekOfCode": "app = FastAPI(title=\"API : Gestion de Bibliothèque\")\napp.include_router(categorie.crud.categrie_router)\napp.include_router(livre.crud.livre_router)",
         "detail": "main",
         "documentation": {}
     }
